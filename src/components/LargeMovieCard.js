@@ -12,10 +12,17 @@ export default function LargeMovieCard(props) {
           document.getElementById(
             props.movie["Title"] + props.movie["Year"]
           ).style.visibility = "hidden";
+          document.getElementById(
+            props.movie["Title"] + props.movie["Year"]+"l"
+          ).style.top = "-50%";
         }}
       />
 
-      <div className="largeMovieCard flex flex-col container shadow rounded-lg p-6 items-center fixed z-30">
+      <div
+        className="largeMovieCard flex flex-col container shadow rounded-lg p-6 items-center fixed z-30"
+        style={{ top: "-50%" }}
+        id={props.movie["Title"] + props.movie["Year"] + "l"}
+      >
         <div className="flex flex-row items-center">
           <div className="flex flex-col mr-10">
             <h1 className="text-2xl font-bold mb-2">{detailInfo["Title"]}</h1>

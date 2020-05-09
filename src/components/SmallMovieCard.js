@@ -9,6 +9,9 @@ export default function SmallMovieCard(props) {
         onClick={() => {
           document.getElementById(
             props.movie["Title"] + props.movie["Year"]
+          ).style.visibility = "visible";
+          document.getElementById(
+            props.movie["Title"] + props.movie["Year"]+"l"
           ).style.top = "50%";
         }}
       >
