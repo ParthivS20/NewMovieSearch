@@ -1,2 +1,0 @@
-# NewMovieSearch
-Created with CodeSandbox
